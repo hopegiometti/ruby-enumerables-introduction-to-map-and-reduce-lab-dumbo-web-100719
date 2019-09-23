@@ -38,4 +38,11 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
+  counter = 0
+  while counter < source_array.size do
+    return false if
+    source_array[counter] == false
+    counter += 1
+    return true
+  end
 end
